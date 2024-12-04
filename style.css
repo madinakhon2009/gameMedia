@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 250, 211);
+}
+
+h1 {
+    font-size: 80px;
+    text-align: center;
+    color: brown;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 40px;
+    color: brown;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.middle img {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    margin: 0 100px;
+}
+
+.middle .card {
+    text-align: center;
+}
+
+h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+
+
+button {
+    font-size: 20px;
+    padding: 15px 50px;
+    cursor: pointer;
+    border: 3px solid brown;
+    color: brown;
+    background-color: transparent;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: brown;
+    color: white;
+}
+
+@media (max-width: 320px) {
+    .middle{
+        flex-direction: column;
+        text-align: center;
+    }
+    #h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+     #message{
+        font-size: 30px;
+        text-align: center;
+     }
+     .card img{
+        width: 200px;
+        height: 200px;
+     }
+     #button{
+        margin-bottom: 30px;
+        margin-top: 30px;
+     }
+    
+}
